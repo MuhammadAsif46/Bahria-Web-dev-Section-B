@@ -109,9 +109,9 @@
 
       <div class="buttons">
         <!-- Row 1 -->
-        <button class="clear" onclick="clearAll()">AC</button>
-        <button onclick="delBtn()">Del</button>
-        <button >%</button>
+        <button class="clear" onclick="clearBtn()">AC</button>
+        <button onclick="deleteBtn()">Del</button>
+        <button onclick="operator('%')">%</button>
         <button class="operator" onclick="operator('/')">/</button>
 
         <!-- Row 2 -->
@@ -133,9 +133,9 @@
         <button class="operator" onclick="operator('+')">+</button>
 
         <!-- Row 5 -->
-        <button class="number zero">0</button>
-        <button class="decimal">.</button>
-        <button class="equals">=</button>
+        <button class="number zero" onclick="number(0)">0</button>
+        <button class="decimal" onclick="decimalPoint()">.</button>
+        <button class="equals" onclick="calculate()">=</button>
       </div>
     </div>
     <script src="app.js"></script>
